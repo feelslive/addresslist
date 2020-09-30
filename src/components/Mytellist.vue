@@ -41,6 +41,38 @@ var userData = [
       {
         "name":"a4",
         "tel":"13000000014"
+      },
+      {
+        "name":"a1",
+        "tel":"13000000001"
+      }, 
+      {
+        "name":"a2",
+        "tel":"13000000002"
+      },
+      {
+        "name":"a3",
+        "tel":"13000000003"
+      },
+      {
+        "name":"a4",
+        "tel":"13000000014"
+      },
+      {
+        "name":"a1",
+        "tel":"13000000001"
+      }, 
+      {
+        "name":"a2",
+        "tel":"13000000002"
+      },
+      {
+        "name":"a3",
+        "tel":"13000000003"
+      },
+      {
+        "name":"a4",
+        "tel":"13000000014"
       }
     ]
   },
@@ -68,6 +100,38 @@ var userData = [
    {
     "index":"C",
     "users":[
+      {
+        "name":"C1",
+        "tel":"13000000004"
+      }, 
+      {
+        "name":"C2",
+        "tel":"13000000005"
+      },
+      {
+        "name":"C3",
+        "tel":"13000000006"
+      },
+      {
+        "name":"C4",
+        "tel":"13000000007"
+      },
+      {
+        "name":"C1",
+        "tel":"13000000004"
+      }, 
+      {
+        "name":"C2",
+        "tel":"13000000005"
+      },
+      {
+        "name":"C3",
+        "tel":"13000000006"
+      },
+      {
+        "name":"C4",
+        "tel":"13000000007"
+      },
       {
         "name":"C1",
         "tel":"13000000004"
@@ -125,6 +189,54 @@ var userData = [
       {
         "name":"E4",
         "tel":"13000000007"
+      },
+      {
+        "name":"E1",
+        "tel":"13000000004"
+      }, 
+      {
+        "name":"E2",
+        "tel":"13000000005"
+      },
+      {
+        "name":"E3",
+        "tel":"13000000006"
+      },
+      {
+        "name":"E4",
+        "tel":"13000000007"
+      },
+      {
+        "name":"E1",
+        "tel":"13000000004"
+      }, 
+      {
+        "name":"E2",
+        "tel":"13000000005"
+      },
+      {
+        "name":"E3",
+        "tel":"13000000006"
+      },
+      {
+        "name":"E4",
+        "tel":"13000000007"
+      },
+      {
+        "name":"E1",
+        "tel":"13000000004"
+      }, 
+      {
+        "name":"E2",
+        "tel":"13000000005"
+      },
+      {
+        "name":"E3",
+        "tel":"13000000006"
+      },
+      {
+        "name":"E4",
+        "tel":"13000000007"
       }
     ]
   }
@@ -164,7 +276,11 @@ export default {
       var six = this.$refs.listsix
       for (var i = 0; i < six.length; i++) {
         if(six[i].innerHTML == ev.target.innerHTML){
-          document.body.scrollTop = six[i].offsetTop;
+          // document.body.scrollTop = six[i].offsetTop;
+          window.scrollTo({
+            top:six[i].offsetTop,
+            behavior:'smooth'
+          })
         }
       }
     },
