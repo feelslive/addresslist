@@ -272,7 +272,6 @@ export default {
       this.$refs.listIndex.style.marginTop = -ih/2+"px"
     },
     setScroll(ev){
-      console.log(ev.target.innerHTML)
       var six = this.$refs.listsix
       for (var i = 0; i < six.length; i++) {
         if(six[i].innerHTML == ev.target.innerHTML){
